@@ -50,9 +50,9 @@ const CEOSpotlight = () => {
             {/* Right: Executive Narrative */}
             <div className="lg:col-span-7 space-y-10 lg:pl-12">
               <div className="space-y-6">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-connectic-purple/10 border border-connectic-purple/20">
-                  <Terminal className="w-3 h-3 text-connectic-purple" />
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-connectic-purple">Our Leadership Vision</span>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-connectic-purple/10 border border-connectic-purple/20 mb-6 group cursor-default shadow-sm hover:shadow-connectic-purple/10 transition-all duration-500">
+                  <span className="w-2 h-2 rounded-full bg-connectic-purple animate-pulse" />
+                  <span className="text-[10px] font-black uppercase tracking-[0.2em] text-connectic-purple">Our Leadership Vision</span>
                 </div>
                 
                 <h2 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">

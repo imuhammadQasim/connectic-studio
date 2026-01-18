@@ -50,14 +50,14 @@ const Portfolio = () => {
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-connectic-purple/10 border border-connectic-purple/20 mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-connectic-purple/10 border border-connectic-purple/20 mb-6 group cursor-default shadow-sm hover:shadow-connectic-purple/10 transition-all duration-500">
               <span className="w-2 h-2 rounded-full bg-connectic-purple animate-pulse" />
-              <span className="text-xs font-bold uppercase tracking-widest text-connectic-purple">Success Stories</span>
+              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-connectic-purple">Success Stories</span>
             </div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-6 text-foreground">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-4 md:mb-6 text-foreground">
               Featured <span className="gradient-text">Masterpieces</span>
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
               We don't just deliver code; we deliver transformative results. 
               Explore our laboratory of high-performance digital solutions.
             </p>
@@ -65,20 +65,20 @@ const Portfolio = () => {
           
           <div className="flex gap-4">
             <Button
-              variant="outline"
+              variant="default"
               size="icon"
               onClick={scrollPrev}
-              className="w-14 h-14 rounded-full border-foreground/10 hover:border-foreground/30 hover:bg-foreground/5 transition-all duration-500 text-foreground"
+              className="rounded-full bg-primary/90 hover:bg-primary text-white shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all duration-300 hover:scale-110 active:scale-95 border-none group"
             >
-              <ChevronLeft className="w-6 h-6" />
+              <ChevronLeft className="w-6 h-6 transition-transform group-hover:-translate-x-0.5" />
             </Button>
             <Button
-              variant="outline"
+              variant="default"
               size="icon"
               onClick={scrollNext}
-              className="w-14 h-14 rounded-full border-foreground/10 hover:border-foreground/30 hover:bg-foreground/5 transition-all duration-500 text-foreground"
+              className="rounded-full bg-primary/90 hover:bg-primary text-white shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all duration-300 hover:scale-110 active:scale-95 border-none group"
             >
-              <ChevronRight className="w-6 h-6" />
+              <ChevronRight className="w-6 h-6 transition-transform group-hover:translate-x-0.5" />
             </Button>
           </div>
         </div>
@@ -89,14 +89,14 @@ const Portfolio = () => {
             {projects.map((project, index) => (
               <div
                 key={project.title}
-                className="flex-[0_0_92%] md:flex-[0_0_80%] lg:flex-[0_0_65%] min-w-0 pl-6 md:pl-10"
+                className="flex-[0_0_92%] md:flex-[0_0_80%] lg:flex-[0_0_65%] min-w-0 pl-3 md:pl-10"
               >
                 <div className="group relative cursor-pointer">
                   {/* Floating Glow */}
                   <div className={`absolute -inset-4 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 blur-[80px] transition-all duration-1000 rounded-[3rem] pointer-events-none`} />
 
                   {/* Card Container - Midnight Azure Classy Aesthetic */}
-                  <div className="relative overflow-hidden rounded-[3rem] aspect-[16/10] md:aspect-[16/9] bg-blue-50/50 dark:bg-[#030712]/95 border border-foreground/5 dark:border-blue-500/10 backdrop-blur-3xl shadow-2xl transition-all duration-700 group-hover:border-blue-500/20 dark:group-hover:border-blue-500/30 group-hover:shadow-blue-500/5">
+                  <div className="relative overflow-hidden rounded-[3rem] aspect-[3/4] md:aspect-[16/9] bg-blue-50/50 dark:bg-[#030712]/95 border border-foreground/5 dark:border-blue-500/10 backdrop-blur-3xl shadow-2xl transition-all duration-700 group-hover:border-blue-500/20 dark:group-hover:border-blue-500/30 group-hover:shadow-blue-500/5">
                     
                     {/* Background Image with Smart Reveal (Matched to Services) */}
                     <div className="absolute inset-0">
@@ -110,7 +110,7 @@ const Portfolio = () => {
                     </div>
 
                     {/* Content Layer (Matched to Services) */}
-                    <div className="absolute inset-0 p-10 md:p-14 flex flex-col justify-end items-start z-10 translate-y-2 group-hover:translate-y-0 transition-all duration-700">
+                    <div className="absolute inset-0 p-6 md:p-14 flex flex-col justify-end items-start z-10 translate-y-2 group-hover:translate-y-0 transition-all duration-700">
                       <div className="w-full space-y-6">
                         
                         <div className="flex flex-wrap items-center justify-between gap-4">
@@ -123,10 +123,10 @@ const Portfolio = () => {
                         </div>
 
                         <div className="space-y-4">
-                          <h3 className="text-4xl md:text-5xl font-black text-white tracking-tight leading-none group-hover:gradient-text transition-all duration-500 drop-shadow-md">
+                          <h3 className="text-3xl md:text-5xl font-black text-white tracking-tight leading-none group-hover:gradient-text transition-all duration-500 drop-shadow-md">
                             {project.title}
                           </h3>
-                          <p className="text-white/70 text-lg md:text-xl max-w-2xl leading-relaxed group-hover:text-white transition-colors duration-500 font-light drop-shadow-sm">
+                          <p className="text-white/70 text-sm md:text-xl max-w-2xl leading-relaxed group-hover:text-white transition-colors duration-500 font-light drop-shadow-sm">
                             {project.description}
                           </p>
                         </div>
@@ -135,7 +135,7 @@ const Portfolio = () => {
                         <div className="flex flex-wrap items-center justify-between gap-8 pt-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-700 delay-100">
                           <div className="flex flex-wrap gap-2">
                             {project.tags.map((tag) => (
-                              <span key={tag} className="text-[10px] font-bold text-white/40 uppercase tracking-widest border border-white/10 px-3 py-1 rounded-md bg-white/5">
+                              <span key={tag} className="text-[10px] font-bold text-white uppercase tracking-widest border border-connectic-purple/20 px-3 py-1.5 rounded-lg bg-gradient-to-r from-connectic-purple/30 to-connectic-blue/30 backdrop-blur-xl shadow-[0_0_15px_rgba(139,92,246,0.15)]">
                                 {tag}
                               </span>
                             ))}

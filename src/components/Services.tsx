@@ -91,10 +91,10 @@ const Services = () => {
               <span className="w-2 h-2 rounded-full bg-connectic-purple animate-pulse" />
               <span className="text-[10px] font-black uppercase tracking-[0.2em] text-connectic-purple">Full-Stack Expertise</span>
             </div>
-            <h2 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 text-foreground">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight mb-4 md:mb-6 text-foreground">
               Our <span className="gradient-text">Studio Services</span>
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
               We architect high-performance digital ecosystems with surgical precision. 
               From AI integration to enterprise cloud, we deliver the future of business.
             </p>
@@ -126,14 +126,14 @@ const Services = () => {
             {services.map((service, index) => (
               <div
                 key={service.title}
-                className="flex-[0_0_92%] md:flex-[0_0_75%] lg:flex-[0_0_52%] min-w-0 pl-6 md:pl-8 lg:pl-10"
+                className="flex-[0_0_92%] md:flex-[0_0_75%] lg:flex-[0_0_52%] min-w-0 pl-3 md:pl-8 lg:pl-10"
               >
                 <div className="group relative cursor-pointer p-4">
                   {/* Brand-Matched Background Glow */}
                   <div className={`absolute -inset-4 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-15 blur-[60px] transition-all duration-1000 rounded-[3rem] pointer-events-none`} />
 
                   {/* Main Bento Card - Slightly lightened for a more premium look while keeping contrast */}
-                  <div className="relative overflow-hidden rounded-[2.5rem] aspect-[16/11] md:aspect-[16/10.5] bg-zinc-950/90 border border-white/5 backdrop-blur-2xl transition-all duration-700 group-hover:border-white/20 group-hover:shadow-2xl group-hover:shadow-black/40">
+                  <div className="relative overflow-hidden rounded-[2.5rem] aspect-[3/4] md:aspect-[16/10.5] bg-zinc-950/90 border border-white/5 backdrop-blur-2xl transition-all duration-700 group-hover:border-white/20 group-hover:shadow-2xl group-hover:shadow-black/40">
                     
                     {/* Background Image - Smart Reveal (Monochrome to Color) */}
                     <div className="absolute inset-0 transition-all duration-1000 ease-out group-hover:scale-105">
@@ -149,7 +149,7 @@ const Services = () => {
                     <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} mix-blend-overlay opacity-10 group-hover:opacity-20 transition-opacity duration-700`} />
 
                     {/* Content Layer */}
-                    <div className="absolute inset-0 p-10 md:p-12 flex flex-col justify-end items-start z-10">
+                    <div className="absolute inset-0 p-6 md:p-12 flex flex-col justify-end items-start z-10">
                       <div className="flex flex-col gap-6 w-full">
                         
                         {/* Luminous Icon Container */}
@@ -160,11 +160,11 @@ const Services = () => {
                         </div>
                         
                         <div className="space-y-4">
-                          <h3 className="text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight drop-shadow-md">
+                          <h3 className="text-2xl md:text-4xl font-bold text-white tracking-tight leading-tight drop-shadow-md">
                             {service.title}
                           </h3>
                           
-                          <p className="text-white/90 text-lg leading-relaxed max-w-xl drop-shadow-sm group-hover:text-white transition-all duration-500">
+                          <p className="text-white/90 text-sm md:text-lg leading-relaxed max-w-xl drop-shadow-sm group-hover:text-white transition-all duration-500">
                             {service.description}
                           </p>
                         </div>

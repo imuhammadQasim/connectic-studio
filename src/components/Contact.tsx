@@ -50,131 +50,131 @@ const Contact = () => {
                 <span className="text-[10px] font-black uppercase tracking-[0.2em] text-connectic-purple">Let's Connect</span>
               </div>
               
-              <h2 className="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-8 tracking-tight leading-[1.1]">
-                Ready to transform your <br />
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold mb-6 md:mb-8 tracking-tight leading-[1.1]">
+                Ready to transform your <br className="hidden sm:block" />
                 <span className="gradient-text">Digital Presence?</span>
               </h2>
               
-              <p className="text-lg text-muted-foreground mb-16 max-w-lg leading-relaxed">
+              <p className="text-base sm:text-lg text-muted-foreground mb-12 md:mb-16 max-w-lg leading-relaxed">
                 Whether you have a specific project in mind or just want to explore possibilities, 
                 our team is here to help you navigate the future of technology.
               </p>
 
               {/* Bento Info Cards */}
-              <div className="grid sm:grid-cols-2 gap-6 mb-12">
-                <div className="group/card relative overflow-hidden glass-card p-6 rounded-3xl border-foreground/5 transition-all duration-500 hover:border-connectic-purple/30 hover:shadow-2xl hover:shadow-connectic-purple/5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mb-12">
+                <div className="group/card relative overflow-hidden glass-card p-5 md:p-6 rounded-[2rem] border-foreground/5 transition-all duration-500 hover:border-connectic-purple/30 hover:shadow-2xl hover:shadow-connectic-purple/5">
                   <div className="absolute -inset-10 bg-connectic-purple/5 blur-3xl opacity-0 group-hover/card:opacity-100 transition-opacity duration-1000" />
-                  <div className="relative z-10 space-y-4">
-                    <div className="w-12 h-12 rounded-2xl bg-connectic-purple/10 flex items-center justify-center group-hover/card:scale-110 group-hover/card:bg-connectic-purple transition-all duration-500">
-                      <Mail className="w-6 h-6 group-hover/card:text-white" />
+                  <div className="relative z-10 space-y-3 md:space-y-4">
+                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-connectic-purple/10 flex items-center justify-center group-hover/card:scale-110 group-hover/card:bg-connectic-purple transition-all duration-500">
+                      <Mail className="w-5 h-5 md:w-6 md:h-6 group-hover/card:text-white" />
                     </div>
                     <div>
-                      <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/60 mb-1">Email Executive</h4>
-                      <p className="font-bold text-foreground">mq80140@gmail.com</p>
+                      <h4 className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/60 mb-1">Email Executive</h4>
+                      <p className="font-bold text-sm md:text-base text-foreground break-all">mq80140@gmail.com</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="group/card relative overflow-hidden glass-card p-6 rounded-3xl border-foreground/5 transition-all duration-500 hover:border-connectic-blue/30 hover:shadow-2xl hover:shadow-connectic-blue/5">
+                <div className="group/card relative overflow-hidden glass-card p-5 md:p-6 rounded-[2rem] border-foreground/5 transition-all duration-500 hover:border-connectic-blue/30 hover:shadow-2xl hover:shadow-connectic-blue/5">
                   <div className="absolute -inset-10 bg-connectic-blue/5 blur-3xl opacity-0 group-hover/card:opacity-100 transition-opacity duration-1000" />
-                  <div className="relative z-10 space-y-4">
-                    <div className="w-12 h-12 rounded-2xl bg-connectic-blue/10 flex items-center justify-center group-hover/card:scale-110 group-hover/card:bg-connectic-blue transition-all duration-500">
-                      <Phone className="w-6 h-6 group-hover/card:text-white" />
+                  <div className="relative z-10 space-y-3 md:space-y-4">
+                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-connectic-blue/10 flex items-center justify-center group-hover/card:scale-110 group-hover/card:bg-connectic-blue transition-all duration-500">
+                      <Phone className="w-5 h-5 md:w-6 md:h-6 group-hover/card:text-white" />
                     </div>
                     <div>
-                      <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/60 mb-1">Direct Line</h4>
-                      <p className="font-bold text-foreground">+1 (555) Connect</p>
+                      <h4 className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/60 mb-1">Direct Line</h4>
+                      <p className="font-bold text-sm md:text-base text-foreground">Let's Connect</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="sm:col-span-2 group/card relative overflow-hidden glass-card p-6 rounded-3xl border-foreground/5 transition-all duration-500 hover:border-foreground/20 hover:shadow-2xl">
+                <div className="sm:col-span-2 group/card relative overflow-hidden glass-card p-5 md:p-6 rounded-[2rem] border-foreground/5 transition-all duration-500 hover:border-foreground/20 hover:shadow-2xl">
                   <div className="absolute -inset-10 bg-foreground/5 blur-3xl opacity-0 group-hover/card:opacity-100 transition-opacity duration-1000" />
-                  <div className="relative z-10 flex items-center gap-6">
-                    <div className="w-12 h-12 rounded-2xl bg-foreground/5 flex items-center justify-center">
-                      <Globe className="w-6 h-6" />
+                  <div className="relative z-10 flex items-center gap-4 md:gap-6">
+                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-foreground/5 flex items-center justify-center">
+                      <Globe className="w-5 h-5 md:w-6 md:h-6" />
                     </div>
                     <div>
-                      <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/60 mb-1">Global Presence</h4>
-                      <p className="font-bold text-foreground">Remote-First • Operating Worldwide</p>
+                      <h4 className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/60 mb-1">Global Presence</h4>
+                      <p className="font-bold text-sm md:text-base text-foreground">Remote-First • Operating Worldwide</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Trust indicators */}
-              <div className="pt-8 border-t border-border flex items-center gap-8">
+              {/* Trust indicators - Mobile Wrapped */}
+              <div className="pt-8 border-t border-border flex flex-wrap items-center gap-6 md:gap-8">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-emerald-500/10 flex items-center justify-center">
-                    <Clock className="w-4 h-4 text-emerald-500" />
+                  <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-emerald-500/10 flex items-center justify-center">
+                    <Clock className="w-3.5 h-3.5 md:w-4 md:h-4 text-emerald-500" />
                   </div>
-                  <span className="text-[10px] font-black uppercase tracking-widest text-muted-foreground">24h Response</span>
+                  <span className="text-[9px] md:text-[10px] font-black uppercase tracking-widest text-muted-foreground">24h Response</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
-                    <CheckCircle2 className="w-4 h-4 text-primary" />
+                  <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-primary/10 flex items-center justify-center">
+                    <CheckCircle2 className="w-3.5 h-3.5 md:w-4 md:h-4 text-primary" />
                   </div>
-                  <span className="text-[10px] font-black uppercase tracking-widest text-muted-foreground">Expert Consultation</span>
+                  <span className="text-[9px] md:text-[10px] font-black uppercase tracking-widest text-muted-foreground">Expert Consultation</span>
                 </div>
               </div>
             </div>
 
             {/* Right Content: Form - Elite Cinematic Styling */}
-            <div className="animate-fade-in relative">
+            <div className="animate-fade-in relative mt-12 lg:mt-0">
               <div className="absolute -inset-4 bg-gradient-to-br from-connectic-purple/10 to-connectic-blue/10 blur-[100px] opacity-30 dark:opacity-50" />
               
-              <div className="relative glass-card p-8 md:p-12 rounded-[2rem] border-white/5 dark:border-white/10 shadow-3xl overflow-hidden shadow-black/20">
+              <div className="relative glass-card p-6 sm:p-8 md:p-12 rounded-[2rem] border-white/5 dark:border-white/10 shadow-3xl overflow-hidden shadow-black/20">
                 {/* Submit Success Overlay */}
                 {isSubmitted && (
                   <div className="absolute inset-0 bg-background/98 backdrop-blur-xl z-20 flex flex-col items-center justify-center text-center p-8 animate-fade-in">
-                    <div className="w-24 h-24 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center mb-6 animate-float">
-                      <CheckCircle2 className="w-12 h-12" />
+                    <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center mb-6 animate-float">
+                      <CheckCircle2 className="w-10 h-10 sm:w-12 sm:h-12" />
                     </div>
-                    <h3 className="text-3xl font-black mb-3 text-foreground tracking-tighter">Transmission Successful</h3>
-                    <p className="text-muted-foreground mb-10 max-w-sm leading-relaxed">
+                    <h3 className="text-2xl sm:text-3xl font-black mb-3 text-foreground tracking-tighter">Transmission Successful</h3>
+                    <p className="text-sm sm:text-base text-muted-foreground mb-10 max-w-sm leading-relaxed">
                       Your vision has been received. Our elite team will analyze and respond within 24 hours.
                     </p>
-                    <Button variant="outline" size="xl" onClick={() => setIsSubmitted(false)} className="rounded-xl border-connectic-purple/30 text-connectic-purple hover:bg-connectic-purple hover:text-white">
+                    <Button variant="outline" size="xl" onClick={() => setIsSubmitted(false)} className="rounded-xl border-connectic-purple/30 text-connectic-purple hover:bg-connectic-purple hover:text-white px-8 py-6 h-auto">
                       Send New Vision
                     </Button>
                   </div>
                 )}
 
-                <div className="mb-10 space-y-2">
-                  <h3 className="text-2xl font-extrabold text-foreground tracking-tight">Initiate Project</h3>
-                  <p className="text-[10px] text-muted-foreground/60 uppercase font-black tracking-[0.2em] italic">Phase 01: Requirement Analysis</p>
+                <div className="mb-8 md:mb-10 space-y-2">
+                  <h3 className="text-xl sm:text-2xl font-extrabold text-foreground tracking-tight">Initiate Project</h3>
+                  <p className="text-[9px] text-muted-foreground/60 uppercase font-black tracking-[0.2em] italic">Phase 01: Requirement Analysis</p>
                 </div>
 
-                <form onSubmit={handleSubmit} className="space-y-8">
-                  <div className="grid md:grid-cols-2 gap-8">
+                <form onSubmit={handleSubmit} className="space-y-6 md:space-y-8">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                     <div className="space-y-3">
-                      <label className="text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/40 px-1">Full Name</label>
+                      <label className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/40 px-1">Full Name</label>
                       <Input 
                         placeholder="Alex Architect" 
                         required 
-                        className="h-14 bg-foreground/[0.03] border-foreground/5 focus:border-connectic-purple/30 focus:ring-0 transition-all rounded-2xl placeholder:text-foreground/20 font-medium text-sm"
+                        className="h-12 md:h-14 bg-foreground/[0.03] border-foreground/5 focus:border-connectic-purple/30 focus:ring-0 transition-all rounded-2xl placeholder:text-foreground/20 font-medium text-sm"
                       />
                     </div>
                     <div className="space-y-3">
-                      <label className="text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/40 px-1">Email Endpoint</label>
+                      <label className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/40 px-1">Email Endpoint</label>
                       <Input 
                         type="email" 
                         placeholder="connect@brand.ai" 
                         required 
-                        className="h-14 bg-foreground/[0.03] border-foreground/5 focus:border-connectic-blue/30 focus:ring-0 transition-all rounded-2xl placeholder:text-foreground/20 font-medium text-sm"
+                        className="h-12 md:h-14 bg-foreground/[0.03] border-foreground/5 focus:border-connectic-blue/30 focus:ring-0 transition-all rounded-2xl placeholder:text-foreground/20 font-medium text-sm"
                       />
                     </div>
                   </div>
 
                   <div className="space-y-4">
-                    <label className="text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/40 px-1">Service Intelligence</label>
-                    <div className="flex flex-wrap gap-3">
-                      {["AI Integration", "Web Architecture", "UI/UX Design", "Graphic Design", "Cloud Systems", "Strategy"].map((service) => (
+                    <label className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/40 px-1">Service Intelligence</label>
+                    <div className="flex flex-wrap gap-2 md:gap-3">
+                      {["SaaS Development", "AI Integration", "Web Architecture", "UI/UX Design", "Graphic Design", "Cloud Systems", "AI-SEO", "Social Media Management" ].map((service) => (
                         <button
                           key={service}
                           type="button"
                           onClick={() => toggleService(service)}
-                          className={`px-5 py-2.5 rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] border transition-all duration-300 active:scale-95 ${
+                          className={`px-4 py-2 md:px-5 md:py-2.5 rounded-xl md:rounded-2xl text-[8px] md:text-[10px] font-black uppercase tracking-[0.2em] border transition-all duration-300 active:scale-95 ${
                             selectedServices.includes(service) 
                               ? "bg-connectic-purple text-white border-connectic-purple shadow-lg shadow-connectic-purple/20" 
                               : "border-foreground/5 bg-foreground/[0.02] text-muted-foreground hover:bg-connectic-purple/10 hover:border-connectic-purple/30 hover:text-connectic-purple"
