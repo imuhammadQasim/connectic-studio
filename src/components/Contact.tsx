@@ -69,7 +69,7 @@ const Contact = () => {
                       <Mail className="w-5 h-5 md:w-6 md:h-6 group-hover/card:text-white" />
                     </div>
                     <div>
-                      <h4 className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/60 mb-1">Email Executive</h4>
+                      <h4 className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/60 mb-1">Email</h4>
                       <p className="font-bold text-sm md:text-base text-foreground break-all">mq80140@gmail.com</p>
                     </div>
                   </div>
