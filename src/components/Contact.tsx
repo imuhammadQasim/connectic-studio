@@ -33,7 +33,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="relative py-12 overflow-hidden bg-background">
-      {/* Decorative background elements */}
+      {/* Decorative background  */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none overflow-hidden -z-10">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[120px]" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-[120px]" />
